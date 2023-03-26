@@ -1,0 +1,41 @@
+import styled from "styled-components";
+
+// width: 1440px;
+//   margin: 0 auto;
+
+export const FavoriteContainer = styled.div`
+  position: relative;
+  box-sizing: border-box;
+`;
+
+export const PositionNav = styled.div`
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+`;
+
+export const ImgStyle = styled.img`
+  width: 100vw;
+`;
+
+export const ActiveField = styled.div`
+  background: #fff;
+  position: absolute;
+  z-index: 11;
+  top: 450px;
+  width: 91.6vw;
+  height: 400px;
+  padding: 80px;
+`;
+
+export const PositionBtn = styled.div`
+  text-align: right;
+`;
+
+export const CardStyle = styled.div`
+  display: flex;
+`;
+
+export const WrapperCard = styled.div`
+  margin: 10px;
+`;
