@@ -44,6 +44,7 @@ export const FavoritePage = () => {
               Clear All
             </ButtonComponent>
           </PositionBtn>
+
           <CardStyle>
             {rockets.map((el, i) => {
               return (

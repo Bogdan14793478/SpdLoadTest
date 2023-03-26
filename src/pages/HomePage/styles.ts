@@ -12,8 +12,15 @@ export const PositionNav = styled.div`
   width: 100%;
 `;
 
-export const TextParagraph = styled.p`
+export const TextContainer = styled.div`
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: orange;
+`;
+
+export const TextParagraph = styled.p`
   font-weight: 800;
   font-size: 48px;
   line-height: 58px;
@@ -21,8 +28,6 @@ export const TextParagraph = styled.p`
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  left: 15%;
-  top: 25%;
   color: #fff;
   letter-spacing: 10px;
   font-family: "Syne";
@@ -31,8 +36,6 @@ export const TextParagraph = styled.p`
 export const TextParagraphBig = styled(TextParagraph)`
   font-size: 310px;
   line-height: 372px;
-  top: 7%;
-  left: 20%;
 `;
 
 export const TextAndArrow = styled.div`

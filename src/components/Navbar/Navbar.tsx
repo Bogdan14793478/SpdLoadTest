@@ -27,10 +27,6 @@ export const Navbar = () => {
   const chooseBackgroundColorHeart = activeHeart ? "#fff" : "#1E1E1E";
   const chooseBackgroundColorBox = activeHeart ? "#DD377D" : "#ECECEC";
 
-  const handleClick = () => {
-    console.log("Sign In Click");
-  };
-
   return (
     <NavbarContainer>
       <ImageStyle onClick={redirectToHome} src={Logo} alt="" />

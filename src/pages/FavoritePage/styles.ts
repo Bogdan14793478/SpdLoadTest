@@ -34,6 +34,9 @@ export const PositionBtn = styled.div`
 
 export const CardStyle = styled.div`
   display: flex;
+  width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 `;
 
 export const WrapperCard = styled.div`

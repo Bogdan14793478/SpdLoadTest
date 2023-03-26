@@ -15,6 +15,7 @@ import {
   PositionNav,
   SecondContainer,
   TextAndArrow,
+  TextContainer,
   TextParagraph,
   TextParagraphBig,
   TextParagraphLato,
@@ -36,9 +37,13 @@ export const HomePage = () => {
           <Navbar />
         </PositionNav>
 
-        <SlickSwitcher imgInfo={imgInfo} />
-        <TextParagraph>The space is waiting for</TextParagraph>
-        <TextParagraphBig>You</TextParagraphBig>
+        {/* <SlickSwitcher imgInfo={imgInfo} /> */}
+        {/* <TextParagraph>The space is waiting for</TextParagraph>
+        <TextParagraphBig>You</TextParagraphBig> */}
+        <TextContainer>
+          <TextParagraph>The space is waiting for</TextParagraph>
+          <TextParagraphBig>You</TextParagraphBig>
+        </TextContainer>
         <TextAndArrow>
           <TextParagraphLato>Explore tours</TextParagraphLato>
           <ArrowDown src={Arrow} alt=""></ArrowDown>
