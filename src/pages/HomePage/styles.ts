@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-// width: 100vw;
 export const HomeContainer = styled.div`
   position: relative;
+  // top: -90px;
   box-sizing: border-box;
 `;
 
@@ -14,28 +14,25 @@ export const PositionNav = styled.div`
 
 export const TextContainer = styled.div`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  background: orange;
+  max-height: 372px;
+  height: 100%;
+  width: 100%;
+  top: 32%;
 `;
 
 export const TextParagraph = styled.p`
-  font-weight: 800;
   font-size: 48px;
-  line-height: 58px;
-  display: flex;
-  align-items: center;
+  font-weight: 800;
   text-align: center;
+  margin: 0;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 10px;
-  font-family: "Syne";
+  font-family: Syne;
 `;
 
 export const TextParagraphBig = styled(TextParagraph)`
   font-size: 310px;
-  line-height: 372px;
 `;
 
 export const TextAndArrow = styled.div`

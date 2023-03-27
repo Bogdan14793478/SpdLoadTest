@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SlickSwitcher from "../../components/SlickSlider/SlickSlider";
 import first from "../../assets/first.svg";
 import second from "../../assets/second.svg";
@@ -37,9 +37,7 @@ export const HomePage = () => {
           <Navbar />
         </PositionNav>
 
-        {/* <SlickSwitcher imgInfo={imgInfo} /> */}
-        {/* <TextParagraph>The space is waiting for</TextParagraph>
-        <TextParagraphBig>You</TextParagraphBig> */}
+        <SlickSwitcher imgInfo={imgInfo} />
         <TextContainer>
           <TextParagraph>The space is waiting for</TextParagraph>
           <TextParagraphBig>You</TextParagraphBig>

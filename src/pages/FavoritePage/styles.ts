@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-// width: 1440px;
-//   margin: 0 auto;
-
 export const FavoriteContainer = styled.div`
   position: relative;
   box-sizing: border-box;
