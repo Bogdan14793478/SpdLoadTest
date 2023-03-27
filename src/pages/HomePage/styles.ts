@@ -60,7 +60,10 @@ export const SecondContainer = styled.div`
 
 export const BoxTitleAndArrow = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 1281px;
+  padding: 0 30px;
+  margin: 0 auto;
 `;
 
 export const TextParagraphTours = styled.p`

@@ -9,6 +9,9 @@ import thirdSm from "../../assets/thirdSm.svg";
 import { RocketsType } from "../../state/card";
 import TourCard from "./TourCard";
 import classes from "./styles.module.css";
+import { ContainerArrowLeft, ContainerArrowRight, ImgStyle } from "./styles";
+import RigthArrow from "../../assets/rigth-arrow.svg";
+import LeftArrow from "../../assets/left-arrow.svg";
 
 interface SimpleSliderProps {
   data?: RocketsType[];
@@ -21,7 +24,6 @@ export const SimpleSlider: React.FC<SimpleSliderProps> = ({ data }) => {
     slidesToShow: 3,
     infinite: false,
     slidesToScroll: 1,
-    arrows: false,
     dots: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -64,23 +66,19 @@ export const SimpleSlider: React.FC<SimpleSliderProps> = ({ data }) => {
 };
 
 function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", right: "0px" }}
-      onClick={onClick}
-    />
+    <ContainerArrowRight onClick={onClick}>
+      <ImgStyle src={RigthArrow} alt="" />
+    </ContainerArrowRight>
   );
 }
 
 function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
+  const { onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", zIndex: "3", left: "0px" }}
-      onClick={onClick}
-    />
+    <ContainerArrowLeft onClick={onClick}>
+      <ImgStyle src={LeftArrow} alt="" />
+    </ContainerArrowLeft>
   );
 }

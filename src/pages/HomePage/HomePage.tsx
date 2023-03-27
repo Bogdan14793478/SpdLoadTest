@@ -43,7 +43,7 @@ export const HomePage = () => {
         <BoxTitleAndArrow>
           <TextParagraphTours>Popular tours</TextParagraphTours>
 
-          <TextParagraphTours>Popular tours</TextParagraphTours>
+          {/* <TextParagraphTours>Popular tours</TextParagraphTours> */}
         </BoxTitleAndArrow>
 
         <SimpleSlider data={rocketsRequest} />

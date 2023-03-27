@@ -2,20 +2,18 @@
   width: 1281px;
   padding: 30px;
   margin: 0 auto;
-  /* margin: 8px auto 0px; */
+  position: relative;
 }
 
 .container_slick > div > ul.slick-dots {
   border: 4px solid black;
 }
-/* dots */
 .container_slick div > ul {
   margin-left: -53px;
 }
 
 .container_slick div > ul > li {
   margin: 0 11px;
-  /* opacity: 0; */
   z-index: 11;
 }
 
@@ -35,7 +33,6 @@
   width: 20px;
 }
 
-/* li.slick-active не применяется, почему?  */
 .container_slick div > ul > li .slick-active:before,
 .container_slick div > ul > li button:active,
 .container_slick div > ul > li button:focus {

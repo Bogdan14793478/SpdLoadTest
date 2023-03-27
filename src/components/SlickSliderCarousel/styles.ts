@@ -43,3 +43,19 @@ export const ButtonContainer = styled.div`
   justify-content: space-evenly;
   margin-bottom: 20px;
 `;
+
+export const ContainerArrowRight = styled.div`
+  width: 43px;
+  height: 43px;
+  background: #ececec;
+  position: absolute;
+  top: -100px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContainerArrowLeft = styled(ContainerArrowRight)`
+  right: 60px;
+`;
