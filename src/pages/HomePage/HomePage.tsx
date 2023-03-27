@@ -21,14 +21,6 @@ import {
 import { SimpleSlider } from "../../components/SlickSliderCarousel/SlickSlider";
 import { useRockets } from "../../hooks/card";
 const imgInfo: string[] = [third, second, first];
-const mockData = [
-  { id: "1", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
-  { id: "2", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
-  { id: "3", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
-  { id: "4", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
-  { id: "5", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
-  { id: "6", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
-];
 
 export const HomePage = () => {
   const rocketsRequest = useRockets();
@@ -54,7 +46,7 @@ export const HomePage = () => {
           <TextParagraphTours>Popular tours</TextParagraphTours>
         </BoxTitleAndArrow>
 
-        <SimpleSlider data={rocketsRequest || mockData} />
+        <SimpleSlider data={rocketsRequest} />
       </SecondContainer>
       <Field></Field>
     </>

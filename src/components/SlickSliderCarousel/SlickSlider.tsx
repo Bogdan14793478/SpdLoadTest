@@ -14,7 +14,7 @@ interface SimpleSliderProps {
   data?: RocketsType[];
 }
 
-const imgInfoTwo: string[] = [firstSm, secondSm, thirdSm, secondSm];
+let imgInfoTwo: string[] = [firstSm, secondSm, thirdSm];
 
 export const SimpleSlider: React.FC<SimpleSliderProps> = ({ data }) => {
   const settings = {
@@ -27,20 +27,21 @@ export const SimpleSlider: React.FC<SimpleSliderProps> = ({ data }) => {
     prevArrow: <SamplePrevArrow />,
   };
 
-  // const chooseImg = (index: number) => {
-  //   const indexData = index;
-  //   let copyImg = [...imgInfoTwo];
-  //   if (index > 2 && index < 6) {
-  //     const el = copyImg.shift();
-  //     console.log(copyImg, "change");
-  //     el && copyImg.push(el);
-  //     console.log(imgInfoTwo, "imgInfoTwo");
-  //     console.log(Math.ceil(indexData / 2), "Math.ceil(indexData / 2)");
-  //     return imgInfoTwo[Math.ceil(indexData / 2)];
-  //   }
+  const chooseImg = (index: number, arrImg: string[]) => {
+    if (index <= 2) return imgInfoTwo[index];
 
-  //   if (index <= 2) return imgInfoTwo[indexData];
-  // };
+    if (index % 3 === 0) {
+      const el = arrImg.shift();
+      el && arrImg.push(el);
+      return imgInfoTwo[0];
+    }
+    if ((index - 1) % 3 === 0) {
+      return imgInfoTwo[1];
+    }
+    if ((index - 2) % 3 === 0) {
+      return imgInfoTwo[2];
+    }
+  };
 
   return (
     <div className={classes.container_slick}>
@@ -52,8 +53,7 @@ export const SimpleSlider: React.FC<SimpleSliderProps> = ({ data }) => {
                 type="add"
                 icon={Heart}
                 item={item}
-                // img={chooseImg(i)}
-                img={imgInfoTwo[i]}
+                img={chooseImg(i, imgInfoTwo)}
               />
             </div>
           );
