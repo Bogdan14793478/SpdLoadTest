@@ -15,7 +15,7 @@ import { useRecoilState } from "recoil";
 
 interface TourCardProps {
   item: RocketsType;
-  img: string;
+  img?: string;
   icon: string;
   background?: string;
   type: string;

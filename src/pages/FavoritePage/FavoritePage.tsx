@@ -44,7 +44,7 @@ export const FavoritePage = () => {
             <CardStyle>
               {rockets.map((el, i) => {
                 return (
-                  <WrapperCard>
+                  <WrapperCard key={el.id}>
                     <TourCard
                       type="remove"
                       background="#ECECEC"

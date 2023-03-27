@@ -3,9 +3,7 @@ import SlickSwitcher from "../../components/SlickSlider/SlickSlider";
 import first from "../../assets/first.svg";
 import second from "../../assets/second.svg";
 import third from "../../assets/third.svg";
-import firstSm from "../../assets/firstSm.svg";
-import secondSm from "../../assets/secondSm.svg";
-import thirdSm from "../../assets/thirdSm.svg";
+
 import Arrow from "../../assets/arrow.svg";
 import {
   ArrowDown,
@@ -23,7 +21,14 @@ import {
 import { SimpleSlider } from "../../components/SlickSliderCarousel/SlickSlider";
 import { useRockets } from "../../hooks/card";
 const imgInfo: string[] = [third, second, first];
-const imgInfoTwo: string[] = [firstSm, secondSm, thirdSm, firstSm];
+const mockData = [
+  { id: "1", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
+  { id: "2", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
+  { id: "3", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
+  { id: "4", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
+  { id: "5", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
+  { id: "6", name: "Bogdan", description: "jdkhgdjkgbsdjkf" },
+];
 
 export const HomePage = () => {
   const rocketsRequest = useRockets();
@@ -49,7 +54,7 @@ export const HomePage = () => {
           <TextParagraphTours>Popular tours</TextParagraphTours>
         </BoxTitleAndArrow>
 
-        <SimpleSlider data={rocketsRequest} img={imgInfoTwo} />
+        <SimpleSlider data={rocketsRequest || mockData} />
       </SecondContainer>
       <Field></Field>
     </>

@@ -4,7 +4,7 @@ import { RecoilRoot } from "recoil";
 
 import "./App.css";
 import { Dashboard } from "./components/Dashboard/Dashboard";
-import { MainRoutes } from "./hooks/helpers/MainRoutes";
+import { MainRoutes } from "./components/helpers/MainRoutes";
 import { FavoritePage } from "./pages/FavoritePage/FavoritePage";
 import { HomePage } from "./pages/HomePage/HomePage";
 
