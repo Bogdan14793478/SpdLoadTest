@@ -2,14 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   position: relative;
-  // top: -90px;
   box-sizing: border-box;
-`;
-
-export const PositionNav = styled.div`
-  position: absolute;
-  z-index: 10;
-  width: 100%;
 `;
 
 export const TextContainer = styled.div`

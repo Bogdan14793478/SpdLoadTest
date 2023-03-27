@@ -10,17 +10,19 @@ import { HomePage } from "./pages/HomePage/HomePage";
 
 function App() {
   return (
-    <RecoilRoot>
-      <Router>
-        <Routes>
-          {/* <Route element={<PrivateRoutes component={Dashboard} />}> */}
-          <Route element={<HomePage />} path="/" />
-          <Route element={<FavoritePage />} path="/favorite" />
-          <Route path="*" element={<HomePage />} />
-          {/* </Route> */}
-        </Routes>
-      </Router>
-    </RecoilRoot>
+    <div className="App">
+      <RecoilRoot>
+        <Router>
+          <Routes>
+            <Route element={<PrivateRoutes component={Dashboard} />}>
+              <Route element={<HomePage />} path="/" />
+              <Route element={<FavoritePage />} path="/favorite" />
+              <Route path="*" element={<HomePage />} />
+            </Route>
+          </Routes>
+        </Router>
+      </RecoilRoot>
+    </div>
   );
 }
 

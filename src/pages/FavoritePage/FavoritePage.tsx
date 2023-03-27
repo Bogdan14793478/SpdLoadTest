@@ -14,7 +14,6 @@ import {
   FavoriteContainer,
   ImgStyle,
   PositionBtn,
-  PositionNav,
   WrapperCard,
 } from "./styles";
 import { ButtonComponent } from "../../components/ButtonComponent/ButtonComponent";
@@ -30,9 +29,6 @@ export const FavoritePage = () => {
   return (
     <>
       <FavoriteContainer>
-        <PositionNav>
-          <Navbar />
-        </PositionNav>
         <ImgStyle src={first} alt="" />
         <ActiveField>
           <PositionBtn>

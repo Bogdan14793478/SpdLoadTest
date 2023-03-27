@@ -12,7 +12,6 @@ import {
   BoxTitleAndArrow,
   Field,
   HomeContainer,
-  PositionNav,
   SecondContainer,
   TextAndArrow,
   TextContainer,
@@ -33,10 +32,6 @@ export const HomePage = () => {
   return (
     <>
       <HomeContainer>
-        <PositionNav>
-          <Navbar />
-        </PositionNav>
-
         <SlickSwitcher imgInfo={imgInfo} />
         <TextContainer>
           <TextParagraph>The space is waiting for</TextParagraph>

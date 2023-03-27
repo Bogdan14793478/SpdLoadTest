@@ -1,16 +1,17 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Navbar } from "../Navbar/Navbar";
-import classes from "./styles.module.css";
+import { MainContainer, NavPosition } from "./styles";
+
 export const Dashboard = () => {
   return (
-    <div className={classes.main_container}>
-      <div>
+    <MainContainer>
+      <NavPosition>
         <Navbar />
-      </div>
-      <div>
+      </NavPosition>
+      <MainContainer>
         <Outlet />
-      </div>
-    </div>
+      </MainContainer>
+    </MainContainer>
   );
 };

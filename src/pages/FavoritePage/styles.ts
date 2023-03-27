@@ -5,12 +5,6 @@ export const FavoriteContainer = styled.div`
   box-sizing: border-box;
 `;
 
-export const PositionNav = styled.div`
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-`;
-
 export const ImgStyle = styled.img`
   width: 100vw;
 `;
