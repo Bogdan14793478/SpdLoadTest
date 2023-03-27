@@ -42,8 +42,6 @@ export const HomePage = () => {
       <SecondContainer>
         <BoxTitleAndArrow>
           <TextParagraphTours>Popular tours</TextParagraphTours>
-
-          {/* <TextParagraphTours>Popular tours</TextParagraphTours> */}
         </BoxTitleAndArrow>
 
         <SimpleSlider data={rocketsRequest} />

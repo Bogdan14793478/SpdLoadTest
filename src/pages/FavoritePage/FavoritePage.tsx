@@ -29,7 +29,7 @@ export const FavoritePage = () => {
     <>
       <FavoriteContainer>
         <ImgStyle src={first} alt="" />
-        {rockets.length && (
+        {!!rockets.length && (
           <ActiveField>
             <PositionBtn>
               <ButtonComponent
