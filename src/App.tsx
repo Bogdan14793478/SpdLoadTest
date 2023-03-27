@@ -4,7 +4,7 @@ import { RecoilRoot } from "recoil";
 
 import "./App.css";
 import { Dashboard } from "./components/Dashboard/Dashboard";
-import { PrivateRoutes } from "./hooks/helpers/PrivateRouter";
+import { MainRoutes } from "./hooks/helpers/MainRoutes";
 import { FavoritePage } from "./pages/FavoritePage/FavoritePage";
 import { HomePage } from "./pages/HomePage/HomePage";
 
@@ -14,7 +14,7 @@ function App() {
       <RecoilRoot>
         <Router>
           <Routes>
-            <Route element={<PrivateRoutes component={Dashboard} />}>
+            <Route element={<MainRoutes component={Dashboard} />}>
               <Route element={<HomePage />} path="/" />
               <Route element={<FavoritePage />} path="/favorite" />
               <Route path="*" element={<HomePage />} />

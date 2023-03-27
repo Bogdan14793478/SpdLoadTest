@@ -20,7 +20,6 @@ import {
   TextParagraphLato,
   TextParagraphTours,
 } from "./styles";
-import { Navbar } from "../../components/Navbar/Navbar";
 import { SimpleSlider } from "../../components/SlickSliderCarousel/SlickSlider";
 import { useRockets } from "../../hooks/card";
 const imgInfo: string[] = [third, second, first];
